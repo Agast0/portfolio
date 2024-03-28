@@ -1,5 +1,6 @@
 .rightbar-main-container {
-    position: sticky;
+    position: relative; /* Add display: flex for proper alignment */
+    flex-direction: column; /* Stack elements vertically */
     left: 38%;
     width: 62%;
 }
@@ -10,15 +11,44 @@
     width: 100vw;
 }
 
-.hero-image-container {
-    height: calc(100% - 120px);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.hero-image {
+.about-me-container {
+    position: sticky;
+    margin-top: 100vh;
+    padding-inline: 60px;
     height: 100vh;
+    background-color: var(--theme-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.about-me-heading {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.about-me-text {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.technical-heading,
+.personal-heading {
+    margin-top: 100px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.personal-heading {
+    margin-top: 20px;
+}
+
+.technical-text,
+.personal-text {
+    margin-top: 5px;
+    font-size: 15px;
+}
+

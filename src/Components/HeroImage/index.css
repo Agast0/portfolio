@@ -1,0 +1,19 @@
+.hero-image-container {
+    position: fixed;
+    top: 0;
+    right: -100px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-container.mobile {
+    position: sticky;
+    right: 0;
+}
+
+.hero-image {
+    height: 100vh;
+}
