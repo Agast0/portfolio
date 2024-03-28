@@ -1,8 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './index.css';
 import Logo from '../../Assets/Logo.png';
-import CV from '../../Assets/Zahaab-Khawaja-CV.pdf'
+import CV from '../../Assets/Zahaab-Khawaja-CV.pdf';
 import useCheckMobile from "../../Hooks/useCheckMobile";
+import { motion } from "framer-motion";
 
 function Leftbar() {
     const isMobile = useCheckMobile();
@@ -11,22 +12,53 @@ function Leftbar() {
         window.location.href = 'mailto:zahaabz@gmail.com';
     };
 
-    return (
-        <div className={`leftbar-main-container ${isMobile ? 'mobile' : ''}`}>
+    const LeftbarContent = () => (
+        <>
             <div className={"leftbar-top-content"}>
-                <img src={Logo} alt="Logo" className="logo-image"/>
-                <div className={"leftbar-intro-text"}>
+                <motion.img
+                    initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                    animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    src={Logo} alt="Logo" className="logo-image"
+                />
+                <motion.div
+                    initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                    animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    className={"leftbar-intro-text"}
+                >
                     Hello, I'm a full stack developer and student
-                </div>
-                <div className={"leftbar-main-text"}>
+                </motion.div>
+                <motion.div
+                    initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                    animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    className={"leftbar-main-text"}
+                >
                     My name is Zahaab Khawaja. I craft digital experiences using modern technologies.
-                </div>
+                </motion.div>
             </div>
-            <div className={"leftbar-bottom-content"}>
-                <div className={"leftbar-button"} onClick={handleEmailSend}>
+            <motion.div
+                initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className={"leftbar-bottom-content"}
+            >
+                <motion.div
+                    initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                    animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 1 }}
+                    className={"leftbar-button"}
+                    onClick={handleEmailSend}
+                >
                     Get in touch!
-                </div>
-                <div className={"leftbar-links"}>
+                </motion.div>
+                <motion.div
+                    initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                    animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 1.2 }}
+                    className={"leftbar-links"}
+                >
                     Find me on{' '}
                     <a href="https://github.com/agast0/" target="_blank" rel="noopener noreferrer" className="link">
                         <strong className="bold">GitHub</strong>
@@ -36,16 +68,40 @@ function Leftbar() {
                        rel="noopener noreferrer" className="link">
                         <strong className="bold">LinkedIn</strong>
                     </a>
-                </div>
-                <div className={"leftbar-resume"}>
+                </motion.div>
+                <motion.div
+                    initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                    animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 1.4 }}
+                    className={"leftbar-resume"}
+                >
                     Download {' '}
                     <a href={CV} download="Zahaab-Khawaja-CV.pdf" className="link">
                         <strong className="bold"> my resume</strong>
                     </a>
                     {' '} (PDF 91kb)
+                </motion.div>
+            </motion.div>
+        </>
+    );
+
+    return (
+        <>
+            {isMobile ? (
+                <div className={`leftbar-main-container ${isMobile ? 'mobile' : ''}`}>
+                    <LeftbarContent />
                 </div>
-            </div>
-        </div>
+            ) : (
+                <motion.div
+                    initial={{ width: 'calc(100% - 120px)' }}
+                    animate={{ width: 'calc(38% - 120px)', minWidth: '400px' }}
+                    transition={{ duration: 0.8, delay: 1 }}
+                    className={`leftbar-main-container ${isMobile ? 'mobile' : ''}`}
+                >
+                    <LeftbarContent />
+                </motion.div>
+            )}
+        </>
     );
 }
 
