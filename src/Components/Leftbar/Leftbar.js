@@ -25,7 +25,7 @@ function Leftbar() {
                     initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
                     animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className={"leftbar-intro-text"}
+                    className={`leftbar-intro-text ${isMobile ? 'mobile' : ''}`}
                 >
                     Hello, I'm a full stack developer and student
                 </motion.div>
@@ -33,7 +33,7 @@ function Leftbar() {
                     initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
                     animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className={"leftbar-main-text"}
+                    className={`leftbar-main-text ${isMobile ? 'mobile' : ''}`}
                 >
                     My name is Zahaab Khawaja. I craft digital experiences using modern technologies.
                 </motion.div>
@@ -42,13 +42,13 @@ function Leftbar() {
                 initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
                 animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className={"leftbar-bottom-content"}
+                className={`leftbar-bottom-content ${isMobile ? 'mobile' : ''}`}
             >
                 <motion.div
                     initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
                     animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
                     transition={{ duration: 0.8, delay: 1 }}
-                    className={"leftbar-button"}
+                    className={`leftbar-button ${isMobile ? 'mobile' : ''}`}
                     onClick={handleEmailSend}
                 >
                     Get in touch!
@@ -57,7 +57,7 @@ function Leftbar() {
                     initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
                     animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
                     transition={{ duration: 0.8, delay: 1.2 }}
-                    className={"leftbar-links"}
+                    className={`leftbar-links ${isMobile ? 'mobile' : ''}`}
                 >
                     Find me on{' '}
                     <a href="https://github.com/agast0/" target="_blank" rel="noopener noreferrer" className="link">
@@ -73,7 +73,7 @@ function Leftbar() {
                     initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
                     animate={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
                     transition={{ duration: 0.8, delay: 1.4 }}
-                    className={"leftbar-resume"}
+                    className={`leftbar-resume ${isMobile ? 'mobile' : ''}`}
                 >
                     Download {' '}
                     <a href={CV} download="Zahaab-Khawaja-CV.pdf" className="link">
@@ -94,8 +94,8 @@ function Leftbar() {
             ) : (
                 <motion.div
                     initial={{ width: 'calc(100% - 120px)' }}
-                    animate={{ width: 'calc(38% - 120px)', minWidth: '400px' }}
-                    transition={{ duration: 0.8, delay: 1 }}
+                    animate={{ width: 'calc(38% - 120px)' }}
+                    transition={{ duration: 0.8, delay: 1.6 }}
                     className={`leftbar-main-container ${isMobile ? 'mobile' : ''}`}
                 >
                     <LeftbarContent />

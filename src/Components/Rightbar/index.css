@@ -1,0 +1,24 @@
+.rightbar-main-container {
+    position: sticky;
+    left: 38%;
+    width: 62%;
+}
+
+.rightbar-main-container.mobile {
+    position: sticky;
+    left: 0;
+    width: 100vw;
+}
+
+.hero-image-container {
+    height: calc(100% - 120px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-image {
+    height: 100vh;
+}
