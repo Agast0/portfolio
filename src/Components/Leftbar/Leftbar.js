@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './index.css';
 import Logo from '../../Assets/Logo.png';
 import CV from '../../Assets/Zahaab-Khawaja-CV.pdf'
+import useCheckMobile from "../../Hooks/useCheckMobile";
 
 function Leftbar() {
+    const isMobile = useCheckMobile();
+
     const handleEmailSend = () => {
         window.location.href = 'mailto:zahaabz@gmail.com';
     };
 
     return (
-        <div className="leftbar-main-container">
+        <div className={`leftbar-main-container ${isMobile ? 'mobile' : ''}`}>
             <div className={"leftbar-top-content"}>
                 <img src={Logo} alt="Logo" className="logo-image"/>
                 <div className={"leftbar-intro-text"}>

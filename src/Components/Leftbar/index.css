@@ -8,9 +8,17 @@
     height: calc(100% - 120px);
     color: var(--theme-main);
     padding: 60px;
+    padding-right: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.leftbar-main-container.mobile {
+    position: sticky;
+    min-width: 0;
+    width: calc(100vw - 120px); /* Corrected */
+    height: calc(100vh - 120px); /* Corrected */
 }
 
 .logo-image {
