@@ -9,6 +9,7 @@ import tMobile from '../../Assets/TELEPATI MOBILE.png';
 import tTablet from '../../Assets/TELEPATI TABLET.png';
 import lMobile from '../../Assets/LEAFLET MOBILE.png';
 import lTablet from '../../Assets/LEAFLET TABLET.png';
+import WhatsNext from "./WhatsNext";
 
 function Rightbar() {
     const isMobile = useCheckMobile();
@@ -38,7 +39,7 @@ function Rightbar() {
                 mobile={lMobile}
                 tablet={lTablet}
             />
-
+            <WhatsNext />
         </div>
     );
 }
