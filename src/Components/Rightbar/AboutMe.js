@@ -40,8 +40,8 @@ function AboutMe() {
                 viewport={{ once: true }}
                 className={"technical-text"}
             >
-                Right now you can find me hacking away primarily with Spring, ASP.NET Core, NestJS, Node.js, React,
-                Next.js, Flutter, and in general anything JavaScript / TypeScript, HTML and CSS related.
+                Right now you can find me hacking away primarily with NestJS, Node.js, React,
+                Flutter, and in general anything JavaScript / TypeScript, HTML and CSS related.
             </motion.div>
             <motion.div
                 initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
@@ -59,7 +59,7 @@ function AboutMe() {
                 viewport={{ once: true }}
                 className={"personal-text"}
             >
-                I lived in Dubai when I was young and moved back home to Karachi a few years ago. Right now, I'm
+                I lived in Dubai when I was young and moved home to Karachi a few years ago. Right now, I'm
                 studying computer engineering as an undergraduate student in Turkey. Outside of my professional
                 life, I enjoy physical activities, especially martial arts.
             </motion.div>
