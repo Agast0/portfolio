@@ -30,9 +30,9 @@ function Socials() {
                 whileInView={{opacity: 1, y: 0}} // Animation when component mounts
                 transition={{duration: 0.5}} // Animation duration
             >
-                <FaLinkedin className="social-icon" onClick={handleLinkedInClick}/>
-                <FaGithub className="social-icon" onClick={handleGitHubClick}/>
-                <IoMail className="social-icon" onClick={handleMailClick} style={{marginRight: '0'}}/>
+                <FaLinkedin className={`social-icon ${isMobile ? 'mobile' : ''}`} onClick={handleLinkedInClick}/>
+                <FaGithub className={`social-icon ${isMobile ? 'mobile' : ''}`} onClick={handleGitHubClick}/>
+                <IoMail className={`social-icon ${isMobile ? 'mobile' : ''}`} onClick={handleMailClick} style={{marginRight: '0'}}/>
             </motion.div>
         </div>
     );
