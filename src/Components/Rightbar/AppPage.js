@@ -1,4 +1,4 @@
-import {useEffect, useRef} from "react";
+import {useRef} from "react";
 import {motion, useScroll, useTransform} from "framer-motion";
 
 function AppPage({ title, role, description, mobile, tablet }) {
@@ -11,11 +11,43 @@ function AppPage({ title, role, description, mobile, tablet }) {
         <div className={"app-container"} ref={ref}>
             <div>
                 <div className={"app-title-container"}>
-                    <div className={"app-title"}>{title}</div>
-                    <div className={"app-bp"}>•</div>
-                    <div className={"app-role"}>{role}</div>
+                    <motion.div
+                        initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                        whileInView={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className={"app-title"}
+                    >
+                        {title}
+                    </motion.div>
+                    <motion.div
+                        initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                        whileInView={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className={"app-bp"}
+                    >
+                        •
+                    </motion.div>
+                    <motion.div
+                        initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                        whileInView={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className={"app-role"}
+                    >
+                        {role}
+                    </motion.div>
                 </div>
-                <div className={"app-desc"}>{description}</div>
+                <motion.div
+                    initial={{ skewX: -5, scaleX: 1.2, transformOrigin: 'left', opacity: 0 }}
+                    whileInView={{ skewX: 0, scaleX: 1, transformOrigin: 'left', opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className={"app-desc"}
+                >
+                    {description}
+                </motion.div>
             </div>
             <div className="app-images">
                 <motion.img style={{x: translateXMobile}} src={mobile} alt={`${title} mobile`} className="app-mobile"/>

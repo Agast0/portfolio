@@ -35,6 +35,17 @@
     justify-content: center;
 }
 
+.socials-container {
+    position: sticky;
+    top: 0;
+    padding-inline: 60px;
+    height: 100vh;
+    background-color: var(--theme-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .app-container {
     padding-top: 60px;
     justify-content: flex-start;
@@ -55,7 +66,7 @@
 
 .technical-heading,
 .personal-heading {
-    margin-top: 100px;
+    margin-top: 60px;
     font-size: 15px;
     font-weight: 650;
 }
@@ -114,12 +125,28 @@
 }
 
 .whats-next-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 550;
     margin-bottom: 30px;
 }
 
+.whats-next-title.mobile {
+    padding-top: 60px;
+}
+
 .whats-next-desc {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 300;
+}
+
+.social-icon {
+    font-size: 50px;
+    margin-right: 60px;
+    color: var(--theme-dark);
+    transition: scale 0.5s ease;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    scale: 1.2;
 }

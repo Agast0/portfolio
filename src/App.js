@@ -4,13 +4,17 @@ import Image from "./Components/HeroImage/Image";
 import React, {useEffect} from "react";
 
 function App() {
-    return (
-        <div className="App">
-            <Leftbar />
-            <Image />
-            <Rightbar />
-        </div>
-    );
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
+
+  return (
+    <div className="App">
+        <Leftbar />
+        <Image />
+        <Rightbar />
+    </div>
+  );
 }
 
 export default App;
