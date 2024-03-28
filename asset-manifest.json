@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a9734c4d.css",
+    "main.css": "/portfolio/static/css/main.e8046184.css",
     "main.js": "/portfolio/static/js/main.8bf63ca2.js",
     "static/media/zahaab.png": "/portfolio/static/media/zahaab.25479b4c5b70a80527c0.png",
     "static/media/LEAFLET MOBILE.png": "/portfolio/static/media/LEAFLET MOBILE.4eefeb17c46ba2b2a09f.png",
@@ -11,11 +11,11 @@
     "static/media/TELEPATI TABLET.png": "/portfolio/static/media/TELEPATI TABLET.e8079d7df484f7b71319.png",
     "static/media/TELEPATI MOBILE.png": "/portfolio/static/media/TELEPATI MOBILE.fbb623887fa2e78fa4b8.png",
     "index.html": "/portfolio/index.html",
-    "main.a9734c4d.css.map": "/portfolio/static/css/main.a9734c4d.css.map",
+    "main.e8046184.css.map": "/portfolio/static/css/main.e8046184.css.map",
     "main.8bf63ca2.js.map": "/portfolio/static/js/main.8bf63ca2.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9734c4d.css",
+    "static/css/main.e8046184.css",
     "static/js/main.8bf63ca2.js"
   ]
 }
