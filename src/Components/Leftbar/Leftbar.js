@@ -79,7 +79,7 @@ function Leftbar() {
                     <a href={CV} download="Zahaab-Khawaja-CV.pdf" className="link">
                         <strong className="bold"> my resume</strong>
                     </a>
-                    {' '} (PDF 91kb)
+                    {' '} (PDF 73kb)
                 </motion.div>
             </motion.div>
         </>
