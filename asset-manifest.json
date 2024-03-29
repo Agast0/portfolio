@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.01d64bfd.css",
-    "main.js": "/portfolio/static/js/main.4f1e0655.js",
+    "main.js": "/portfolio/static/js/main.cbf44737.js",
     "static/media/zahaab.png": "/portfolio/static/media/zahaab.25479b4c5b70a80527c0.png",
     "static/media/LEAFLET MOBILE.png": "/portfolio/static/media/LEAFLET MOBILE.4eefeb17c46ba2b2a09f.png",
     "static/media/LEAFLET TABLET.png": "/portfolio/static/media/LEAFLET TABLET.fa8f6d255d617df02463.png",
     "static/media/CAMPUS CONNECT TABLET.png": "/portfolio/static/media/CAMPUS CONNECT TABLET.a9847ffb5f27c87f6a53.png",
     "static/media/CAMPUS CONNECT MOBILE.png": "/portfolio/static/media/CAMPUS CONNECT MOBILE.42406eb075b1df9f4b0f.png",
-    "static/media/Zahaab-Khawaja-CV.pdf": "/portfolio/static/media/Zahaab-Khawaja-CV.093bab1516b971b85db1.pdf",
+    "static/media/Zahaab-Khawaja-CV.pdf": "/portfolio/static/media/Zahaab-Khawaja-CV.0b6b45fb9c8facffde9c.pdf",
     "static/media/TELEPATI TABLET.png": "/portfolio/static/media/TELEPATI TABLET.e8079d7df484f7b71319.png",
     "static/media/TELEPATI MOBILE.png": "/portfolio/static/media/TELEPATI MOBILE.fbb623887fa2e78fa4b8.png",
     "index.html": "/portfolio/index.html",
     "main.01d64bfd.css.map": "/portfolio/static/css/main.01d64bfd.css.map",
-    "main.4f1e0655.js.map": "/portfolio/static/js/main.4f1e0655.js.map"
+    "main.cbf44737.js.map": "/portfolio/static/js/main.cbf44737.js.map"
   },
   "entrypoints": [
     "static/css/main.01d64bfd.css",
-    "static/js/main.4f1e0655.js"
+    "static/js/main.cbf44737.js"
   ]
 }
